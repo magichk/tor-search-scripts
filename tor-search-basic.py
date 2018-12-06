@@ -4,7 +4,7 @@ proxies = {'http': 'socks5h://127.0.0.1:9150',
 
 def searcherUnderDir(address):
 	for page in range(1,4):
-		for searchItem in ['term1', 'term2']:
+		for searchItem in ['drugs', 'isis']:
 			addressWithCriteria = address.replace("CRITERIA_WILDCARD", searchItem)
 			addressToSearch=addressWithCriteria+str(page)
 			print(addressToSearch)
